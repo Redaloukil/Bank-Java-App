@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignupController">
+    <children>
+        <Pane prefHeight="78.0" prefWidth="600.0" style="-fx-background-color: #378e4c;" />
+        <Label layoutX="189.0" prefHeight="63.0" prefWidth="255.0" text="Inscrivez vous " textAlignment="CENTER" textFill="#f8f4f4">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Pane layoutX="81.0" layoutY="84.0" prefHeight="354.0" prefWidth="467.0">
+            <children>
+                <Label layoutX="18.0" layoutY="203.0" text="Adresse">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="154.0" prefHeight="16.0" prefWidth="75.0" text="Age">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="45.0" text="Nom">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="26.0" layoutY="102.0" prefHeight="26.0" prefWidth="75.0" text="Prenom">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="140.0" layoutY="152.0" prefHeight="26.0" prefWidth="248.0" />
+                <TextField layoutX="140.0" layoutY="43.0" prefHeight="26.0" prefWidth="248.0" />
+                <TextField layoutX="142.0" layoutY="100.0" prefHeight="26.0" prefWidth="248.0" />
+                <TextField layoutX="141.0" layoutY="202.0" prefHeight="26.0" prefWidth="248.0" />
+                <Button layoutX="101.0" layoutY="283.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="108.0" style="-fx-font-weight: 700;" text="Submit" textFill="#4d975e">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button layoutX="282.0" layoutY="283.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="94.0" text="Return">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</Pane>

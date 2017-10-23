@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx"  xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller" prefHeight="370.0" prefWidth="489.0">
+    <children>
+        <Label layoutX="23.0" layoutY="170.0" prefHeight="24.0" prefWidth="78.0" text="Carte ID" />
+        <Label layoutX="21.0" layoutY="224.0" prefHeight="16.0" prefWidth="78.0" text="password" />
+        <TextField layoutX="114.0" layoutY="158.0" prefHeight="40.0" prefWidth="331.0" />
+        <PasswordField layoutX="114.0" layoutY="211.0" prefHeight="40.0" prefWidth="331.0" />
+        <Button layoutX="115.0" layoutY="288.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="115.0" text="Connecter" textFill="#4d975e" onAction="#click1">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font></Button>
+        <Pane prefHeight="98.0" prefWidth="489.0" style="-fx-background-color: #378e4c;">
+            <children>
+                <Label layoutX="176.0" layoutY="29.0" prefHeight="40.0" prefWidth="198.0" text="Bievenue " textFill="#f8f4f4">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button layoutX="260.0" layoutY="289.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="145.0" text="Ouvrir un compte" onAction="#click1"/>
+        <Label layoutX="56.0" layoutY="103.0" prefHeight="49.0" prefWidth="409.0" text="Entrez votre numero de carte associé a votre mot de passe " textAlignment="CENTER" wrapText="true" />
+    </children>
+</Pane>
