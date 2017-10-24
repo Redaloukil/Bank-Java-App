@@ -9,8 +9,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
-public class Controller {
+public class LoginController {
 
     @FXML
     private void click1(ActionEvent event)throws IOException {
@@ -19,14 +20,15 @@ public class Controller {
         secondStage= ((Stage) ((Node)event.getSource()).getScene().getWindow());
         secondStage.setTitle("admin");
         secondStage.setScene(new Scene(root));
+        secondStage.setResizable(false);
     }
 
-    /*@FXML
-    private void click2(ActionEvent event)throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("signup.fxml"));
-        Stage thirdStage;
-        thirdStage= ((Stage) ((Node)event.getSource()).getScene().getWindow());
-        thirdStage.setTitle("client");
-        thirdStage.setScene(new Scene(root));
-    }*/
+    public void statusDB(ActionEvent e) throws IOException , SQLException {
+        if(!ClientDB.getConnection().isClosed()){
+
+        }
+        else {
+
+        }
+    }
 }
