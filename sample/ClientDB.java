@@ -22,7 +22,6 @@ public class ClientDB {
     }
     public static void getClients(){
         List<Client> clientList = new ArrayList<Client>();
-        
         try{
             String sql = "SELECT * FROM 'Users' WHERE 1";
             Connection con = ClientDB.getConnection();
