@@ -9,8 +9,8 @@ public class ClientDB {
     public static Connection getConnection(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost/Bank";
-            con = DriverManager.getConnection(url , "root" , "");
+            String url = "jdbc:mysql://localhost:8080/Employee";
+            con = DriverManager.getConnection(url , "root" , "yancaratu");
             System.out.println("connecter");
 
         } catch (ClassNotFoundException e) {

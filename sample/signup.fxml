@@ -40,12 +40,12 @@
                 <TextField layoutX="140.0" layoutY="43.0" prefHeight="26.0" prefWidth="248.0" />
                 <TextField layoutX="142.0" layoutY="100.0" prefHeight="26.0" prefWidth="248.0" />
                 <TextField layoutX="141.0" layoutY="202.0" prefHeight="26.0" prefWidth="248.0" />
-                <Button layoutX="101.0" layoutY="283.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="108.0" style="-fx-font-weight: 700;" text="Submit" textFill="#4d975e">
+                <Button layoutX="101.0" layoutY="283.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="108.0" style="-fx-font-weight: 700;" text="Submit" textFill="#4d975e" onAction="#submitFormClient">
                     <font>
                         <Font size="16.0" />
                     </font>
                 </Button>
-                <Button layoutX="282.0" layoutY="283.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="94.0" text="Return">
+                <Button layoutX="282.0" layoutY="283.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="94.0" text="Return" onAction="#returnToMain">
                     <font>
                         <Font size="16.0" />
                     </font>
