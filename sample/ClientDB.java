@@ -1,25 +1,30 @@
 package sample;
 
+import javafx.fxml.FXML;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class ClientDB {
     static Connection con = null;
-    public static Connection getConnection(){
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:8080/Employee";
-            con = DriverManager.getConnection(url , "root" , "yancaratu");
-            System.out.println("connecter");
 
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+
+    public static Connection getConnection(){
+        String url = "jdbc:mysql://localhost:3306/Bank";
+        String username = "root";
+        String password = "";
+        System.out.println("Connecting database...");
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            System.out.println("Database connected!");
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new IllegalStateException("Cannot connect the database!", e);
         }
         return con;
     }
+
     public static void getClients(){
         List<Client> clientList = new ArrayList<Client>();
         try{

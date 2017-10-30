@@ -22,9 +22,12 @@ public class LoginController {
         secondStage.setScene(new Scene(root));
         secondStage.setResizable(false);
     }
+
     @FXML
     Label dbstate;
+
     public void statusDB(ActionEvent e) throws IOException , SQLException {
+
         if(!ClientDB.getConnection().isClosed()){
             dbstate.setText("Connected");
         }
